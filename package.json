@@ -1,6 +1,6 @@
 {
   "name": "prova-release-it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,10 @@
   "homepage": "https://github.com/multivoltage/prova-release-it#readme",
   "devDependencies": {
     "release-it": "^16.1.0"
+  },
+  "release-it": {
+    "hooks": {
+      "after:bump": "npx auto-changelog -p"
+    }
   }
 }
